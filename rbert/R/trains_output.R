@@ -22,4 +22,4 @@ layer_output_labeled <- layer_output %>%
     by = "sequence_index"
   )
 
-saveRDS(layer_output_labeled, here::here("rbert", "train_output.rds"))
+saveRDS(layer_output_labeled, here::here("rbert", "data", "train_output_labeled.rds"))

@@ -7,8 +7,6 @@ output:
     css: [default, hygge, robot-fonts]
     seal: false
     nature:
-      highlightStyle: github
-      highlightLines: true
       ratio: 16:9
 ---
 
@@ -209,8 +207,8 @@ count: false
 .Large[
 * Helper package
 * Visualize how BERT "thinks"
-  * visualize_attention
-  * display_pca
+  * `visualize_attention`
+  * `display_pca`
 ]
 ]
 
@@ -365,10 +363,10 @@ trains_output_labeled <- trains_output %>%
 ]
 
 ```{r load-trains, include=FALSE}
-trains_output_labeled <- readRDS(here::here("rbert", "trains_output_labeled.rds"))
+trains_output_labeled <- readRDS(here::here("rbert", "data", "trains_output_labeled.rds"))
 projection_df <- trains_output_labeled %>% 
   dplyr::filter(layer_index %in% c(0, 12))
-source(here::here("rbert", "display_pca_dev.R"), local = TRUE)
+source(here::here("rbert", "R", "display_pca_dev.R"), local = TRUE)
 ```
 
 ---

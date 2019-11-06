@@ -46,4 +46,4 @@ trains_data <- googlesheets4::sheets_read(
     mentions_train = stringr::str_detect(tolower(sentence), "train")
   )
 
-saveRDS(trains_data, here::here("rbert", "trains_data.rds"))
+saveRDS(trains_data, here::here("rbert", "data", "trains_data.rds"))

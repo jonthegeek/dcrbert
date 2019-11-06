@@ -202,8 +202,8 @@ count: false
 .Large[
 * Helper package
 * Visualize how BERT "thinks"
-  * visualize_attention
-  * display_pca
+  * `visualize_attention`
+  * `display_pca`
 ]
 ]
 
@@ -505,7 +505,7 @@ wait a minute...
 * Goal: CRAN by end of 2019
   * tensorflow 2.0 (in testing)
   * More Rtful, less pythonic
-  * Recipe: `step_bert_features`
+  * Recipe: `step_bert_features()`
 * Rstudio::conf(2020L) e-poster
 * Poster ideas? [bit.ly/rbertposter](http://bit.ly/rbertposter)
 ]
@@ -513,8 +513,6 @@ wait a minute...
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
 <script>var slideshow = remark.create({
-"highlightStyle": "github",
-"highlightLines": true,
 "ratio": "16:9"
 });
 if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
@@ -555,24 +553,7 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
     }
     deleted = true;
   });
-})();
-// adds .remark-code-has-line-highlighted class to <pre> parent elements
-// of code chunks containing highlighted lines with class .remark-code-line-highlighted
-(function(d) {
-  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
-  const preParents = [];
-  const findPreParent = function(line, p = 0) {
-    if (p > 1) return null; // traverse up no further than grandparent
-    const el = line.parentElement;
-    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
-  };
-
-  for (let line of hlines) {
-    let pre = findPreParent(line);
-    if (pre && !preParents.includes(pre)) preParents.push(pre);
-  }
-  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
-})(document);</script>
+})();</script>
 
 <script>
 (function() {
