@@ -233,6 +233,8 @@ RBERT::extract_features(
 )$attention %>%
   RBERTviz::visualize_attention()
 ```
+
+Based on Jesse Vig's [bertviz](https://github.com/jessevig/bertviz) tool.
 ]
 .pull-right[
 <img src="img/attention/tacos.png", width="500px"/>
