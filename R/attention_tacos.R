@@ -12,4 +12,4 @@ RBERT::extract_features(
   features = "attention"
 )$attention %>%
   RBERTviz::visualize_attention() %>%
-  htmlwidgets::saveWidget(here::here("rbert", "tacos_viz.html"))
+  htmlwidgets::saveWidget(here::here("tacos_viz.html"))

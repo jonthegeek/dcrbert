@@ -151,6 +151,18 @@ count: false
 * Word embeddings
   * word2vec
   * GloVe
+]
+
+---
+
+count: false
+
+# Transfer Learning: NLP
+
+.Large[
+* Word embeddings
+  * word2vec
+  * GloVe
 * king − man + woman ≅ queen
 ]
 
@@ -165,12 +177,21 @@ count: false
   * word2vec
   * GloVe
 * king − man + woman ≅ queen
-* Problem: 
+* Problem: Each word has *one* embedding vector.
   * "I saw the *branch* on the *bank*" vs 
   * "I saw the *branch* of the *bank*"
 ]
 
 ---
+
+# BERT
+
+.Large[
+* **B**idirectional **E**ncoder **R**epresentations from **T**ransformers
+]
+
+---
+count: false
 
 # BERT
 
@@ -188,6 +209,9 @@ count: false
 
 .pull-left[
 .Large[
+* `devtools::install_github(
+  "jonathanbratt/RBERT", build_vignettes = TRUE
+)`
 * Implementation of BERT in R
 * Use for:
   * Feature extraction (text to high-dimensional vectors)
@@ -365,10 +389,10 @@ trains_output_labeled <- trains_output %>%
 ]
 
 ```{r load-trains, include=FALSE}
-trains_output_labeled <- readRDS(here::here("rbert", "data", "trains_output_labeled.rds"))
+trains_output_labeled <- readRDS(here::here("data", "trains_output_labeled.rds"))
 projection_df <- trains_output_labeled %>% 
   dplyr::filter(layer_index %in% c(0, 12))
-source(here::here("rbert", "R", "display_pca_dev.R"), local = TRUE)
+source(here::here("R", "display_pca_dev.R"), local = TRUE)
 ```
 
 ---
