@@ -99,31 +99,6 @@ count: false
 * Task: Classify images (ImageNet)
 * Early layers: simple features.
 * Later layers: complex features.
-]]
-
-&lt;div width="50%"&gt;
-&lt;p  style="padding-left:10"&gt;Credit: &lt;a href="http://yosinski.com/deepvis"&gt;deepvis&lt;/a&gt; by Jason Yosinski, Jeff Clune, Anh Nguyen, Thomas Fuchs, and Hod Lipson&lt;/p&gt;
-&lt;div width="50%" style="float:left"&gt;
-&lt;img src="img/deep_viz/deep_viz_toolbox-dark_to_light.png" width="130px"\&gt;
-&lt;img src="img/deep_viz/deep_viz_toolbox-light_to_dark.png" width="130px"\&gt;
-&lt;/div&gt;
-&lt;div width="50%" style="float:right"&gt;
-&lt;img src="img/deep_viz/deep_viz_toolbox-faces.png" width="130px"\&gt;
-&lt;img src="img/deep_viz/deep_viz_toolbox-text.png" width="130px"\&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
----
-
-count: false
-
-# Transfer Learning
-
-.pull-left[
-.Large[
-* Task: Classify images (ImageNet)
-* Early layers: simple features.
-* Later layers: complex features.
 * Features can transfer to many tasks.
 ]
 ]
@@ -141,18 +116,6 @@ count: false
 &lt;/div&gt;
 
 ---
-
-# Transfer Learning: NLP
-
-.Large[
-* Word embeddings
-  * word2vec
-  * GloVe
-]
-
----
-
-count: false
 
 # Transfer Learning: NLP
 
@@ -180,15 +143,6 @@ count: false
 ]
 
 ---
-
-# BERT
-
-.Large[
-* **B**idirectional **E**ncoder **R**epresentations from **T**ransformers
-]
-
----
-count: false
 
 # BERT
 
@@ -287,21 +241,6 @@ count: false
 .Large[
 Sentences:
 
-* The chicken didn't cross the road because it was too **tired**.
-* The chicken didn't cross the road because it was too **wide**.
-* The dog fetched the ball. It was **excited**.
-* The dog fetched the ball. It was **blue**.
-]
-
----
-
-count: false
-
-# Attention
-
-.Large[
-Sentences:
-
 * The **chicken** didn't cross the road because **it** was too **tired.**
 * The chicken didn't cross the **road** because **it** was too **wide.**
 * The **dog** fetched the ball. **It** was **excited.**
@@ -309,16 +248,6 @@ Sentences:
 ]
 
 ---
-
-# Attention
-
-&lt;img src="img/attention/3_1-chicken_tired.png"&gt;
-
-.Large[Early: Position (≈ edge detector)]
-
----
-
-count: false
 
 # Attention
 
@@ -351,19 +280,6 @@ count: false
 .Large[Later: Pronoun Resolution (≈ face detector)]
 
 ---
-
-# Layer Outputs
-
-.pull-left[
-.Large[
-Online survey:
-
-* "A single sentence about learning, WITH the word 'train' (or 'trained', 'training', etc, meaning 'teach')."
-* "A single sentence about travel, WITH the word 'train' (as in the vehicle)."
-]]
-
----
-count: false
 
 # Layer Outputs
 
@@ -432,14 +348,6 @@ trains_output_labeled %&gt;%
 Layer 0 (initial vectors)
 
 &lt;img src="dcrbert_files/figure-html/layer-0-labeled-1.png" width="1080" /&gt;
----
-count: false
-
-# Layer Outputs
-
-Layer 0 (initial vectors) *Oh crap, should this be animated?*
-
-&lt;img src="dcrbert_files/figure-html/layer-0-labeled-count-1.png" width="1080" /&gt;
 ---
 count: false
 
