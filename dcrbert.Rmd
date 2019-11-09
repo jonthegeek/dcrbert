@@ -366,6 +366,19 @@ Online survey:
 * "A single sentence about travel, WITH the word 'train' (as in the vehicle)."
 ]]
 
+---
+count: false
+
+# Layer Outputs
+
+.pull-left[
+.Large[
+Online survey:
+
+* "A single sentence about learning, WITH the word 'train' (or 'trained', 'training', etc, meaning 'teach')."
+* "A single sentence about travel, WITH the word 'train' (as in the vehicle)."
+]]
+
 .pull-right[
 ```{r layer-outputs, eval=FALSE}
 trains_data <- readRDS("trains_data.rds") %>%
@@ -461,6 +474,28 @@ count: false
 
 # Layer Outputs
 
+Layer 0 (initial vectors) *Oh crap, should this be animated?*
+
+```{r layer-0-labeled-count, echo=FALSE}
+trains_output_labeled %>% 
+  dplyr::filter(
+    stringr::str_detect(token, "^train"),
+    layer_index == 0
+  ) %>% 
+  display_pca_dev(
+    project_vectors = projection_df,
+    color_field = "label",
+    disambiguate_tokens = FALSE
+  ) +
+  ggplot2::scale_y_continuous(limits = c(-20, 25), labels = NULL) +
+  ggplot2::scale_x_continuous(limits = c(-25, 20), labels = NULL) +
+  ggplot2::theme(legend.position = "none")
+```
+---
+count: false
+
+# Layer Outputs
+
 Layer 1
 
 ```{r layer-1, echo=FALSE}
@@ -477,9 +512,6 @@ trains_output_labeled %>%
   ggplot2::scale_y_continuous(limits = c(-20, 25), labels = NULL) +
   ggplot2::scale_x_continuous(limits = c(-25, 20), labels = NULL) +
   ggplot2::theme(legend.position = "none")
-```
-```{r echo=FALSE, fig.width=15, ref.label="layer-1"}
-
 ```
 ---
 count: false
@@ -822,7 +854,7 @@ count: false
   * tensorflow 2.0 (in testing)
   * More Rtful, less pythonic
   * Recipe: `step_bert_features()`
-* Rstudio::conf(2020L) e-poster
+* `rstudio::conf(2020L)` e-poster
 * Poster ideas? [bit.ly/rbertposter](http://bit.ly/rbertposter)
 ]
 
