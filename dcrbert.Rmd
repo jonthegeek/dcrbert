@@ -52,6 +52,8 @@ name: outline
 # Outline
 
 .Large[
+**Follow along/like/reply/retweet at [bit.ly/jonvsemily](http://bit.ly/jonvsemily) and help me win headphones!**
+
 * Transfer Learning
 * BERT
 * RBERT & RBERTviz
@@ -210,8 +212,7 @@ count: false
 .pull-left[
 .Large[
 * `devtools::install_github(
-  "jonathanbratt/RBERT", build_vignettes = TRUE
-)`
+  "jonathanbratt/RBERT", build_vignettes = TRUE)`
 * Implementation of BERT in R
 * Use for:
   * Feature extraction (text to high-dimensional vectors)
@@ -229,6 +230,8 @@ count: false
 
 .pull-left[
 .Large[
+* `devtools::install_github(
+  "jonathanbratt/RBERTviz", build_vignettes = TRUE)`
 * Helper package
 * Visualize how BERT "thinks"
   * `visualize_attention`
@@ -770,6 +773,50 @@ trains_output_labeled %>%
 
 .Large[
 * RBERT is usable *now*...
+]
+
+---
+count: false
+
+# To Do
+
+.Large[
+* RBERT is usable *now*...
+* ...but it can be *better!*
+]
+
+---
+count: false
+
+# To Do
+
+.Large[
+* RBERT is usable *now*...
+* ...but it can be *better!*
+* Goal: CRAN by end of 2019
+]
+
+---
+count: false
+
+# To Do
+
+.Large[
+* RBERT is usable *now*...
+* ...but it can be *better!*
+* Goal: CRAN by end of 2019
+  * tensorflow 2.0 (in testing)
+  * More Rtful, less pythonic
+  * Recipe: `step_bert_features()`
+]
+
+---
+count: false
+
+# To Do
+
+.Large[
+* RBERT is usable *now*...
 * ...but it can be *better!*
 * Goal: CRAN by end of 2019
   * tensorflow 2.0 (in testing)
@@ -777,4 +824,18 @@ trains_output_labeled %>%
   * Recipe: `step_bert_features()`
 * Rstudio::conf(2020L) e-poster
 * Poster ideas? [bit.ly/rbertposter](http://bit.ly/rbertposter)
+]
+
+---
+
+# Contact
+
+.Large[
+* Twitter: [@jonthegeek](https://twitter.com/JonTheGeek) (like/retweet/reply to #rstatsDC tweets!)
+* [github.com/jonathanbratt/RBERT](github.com/jonathanbratt/RBERT)
+* [github.com/jonathanbratt/RBERTviz](github.com/jonathanbratt/RBERTviz)
+* [github.com/jonthegeek](github.com/jonthegeek)
+* R4DS Online Learning Community: [r4ds.online](r4ds.online)
+* TidyTuesday Podcast: [tidytuesday.com](tidytuesday.com)
+
 ]
