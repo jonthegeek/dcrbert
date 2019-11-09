@@ -165,8 +165,7 @@ count: false
 
 .pull-left[
 .Large[
-* `devtools::install_github(
-  "jonathanbratt/RBERT", build_vignettes = TRUE)`
+* `install_github("jonathanbratt/RBERT")`
 * Implementation of BERT in R
 * Use for:
   * Feature extraction (text to high-dimensional vectors)
@@ -184,8 +183,7 @@ count: false
 
 .pull-left[
 .Large[
-* `devtools::install_github(
-  "jonathanbratt/RBERTviz", build_vignettes = TRUE)`
+* `install_github("jonathanbratt/RBERTviz")`
 * Helper package
 * Visualize how BERT "thinks"
   * `visualize_attention`
